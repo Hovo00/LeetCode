@@ -1,0 +1,5 @@
+class Solution:
+    def isPalindrome(self, s: str) -> bool:
+        newstr = ''.join(item for item in s if item.isalnum())
+        newstr = newstr.lower()
+        return newstr == newstr[::-1]
