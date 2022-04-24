@@ -1,0 +1,10 @@
+class Solution:
+    def addStrings(self, num1: str, num2: str) -> str:
+        sum1 = 0
+        for i in range(len(num1)):
+            sum1 = sum1 * 10 + ord(num1[i]) - 48
+        sum2 = 0
+        for i in range(len(num2)):
+            sum2 = sum2 * 10 + ord(num2[i]) - 48
+        return str(sum1 + sum2)
+            
